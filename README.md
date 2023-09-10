@@ -1,6 +1,6 @@
 # Next + Builder + Tailwind
 
-CMS boilerplate repos suck. This one doesn't.
+CMS boilerplate generated from https://github.com/philparzer/builder-next-boilerplate
 
 ## Features
 
