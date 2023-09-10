@@ -5,7 +5,7 @@ import DefaultErrorPage from 'next/error';
 import Head from 'next/head';
 import type { GetStaticPropsContext } from 'next';
 import "../builder.config"
-import LanguageSwitch from '@/components/LanguageSwitch';
+// import LanguageSwitch from '@/components/LanguageSwitch';
 
 // Initialize the Builder SDK with your public API key
 if (!process.env.NEXT_PUBLIC_BUILDER_API_KEY) {throw new Error('Missing NEXT_PUBLIC_BUILDER_API_KEY env var')}
@@ -83,9 +83,10 @@ export default function Page({ page, locale }: any) {
       <Head>
         <title>{page?.data.title}</title>
       </Head>
-      <nav>
+      {/* Localization switch */}
+      {/* <nav>
         <LanguageSwitch />
-      </nav>
+      </nav> */}
       {/* Render the Builder page */}
       <BuilderComponent model="page" data={{ locale: locale }} content={page} />
     </>
